@@ -7,6 +7,8 @@ inherit image
 
 DEPENDS += "bcm2835-bootfiles"
 
+DISTRO_FEATURES_append += " bluez5 bluetooth wifi"
+
 CORE_OS = " \
     firewall \
     ifupdown \
@@ -46,10 +48,15 @@ ALSA += " \
     alsa-utils-scripts \
 "
 
+BLUETOOTH_SUPPORT += " \
+    bluez5 \
+"
+
 IMAGE_INSTALL += " \
     ${ALSA} \
     ${CORE_OS} \
     ${WIFI_SUPPORT} \
+    ${BLUETOOTH_SUPPORT} \
 "
 
 disable_bootlogd() {
