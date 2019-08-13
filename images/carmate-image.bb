@@ -7,7 +7,8 @@ inherit image
 
 DEPENDS += "bcm2835-bootfiles"
 
-DISTRO_FEATURES_append += " bluez5 bluetooth wifi"
+DISTRO_FEATURES_append += " bluez5 bluetooth wifi systemd"
+VIRTUAL-RUNTIME_init_manager = "systemd"
 
 CORE_OS = " \
     firewall \
