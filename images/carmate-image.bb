@@ -49,7 +49,7 @@ ALSA += " \
 IMAGE_INSTALL += " \
     ${ALSA} \
     ${CORE_OS} \
-    ${WIFI_SUPPORT}
+    ${WIFI_SUPPORT} \
 "
 
 disable_bootlogd() {
