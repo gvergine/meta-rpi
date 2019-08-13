@@ -3,3 +3,10 @@
 scripts/config.txt
 scripts/interfaces
 scripts/wpa_supplicant.conf
+
+build/bitbake-cookerdaemon.log
+build/cache/
+build/downloads/
+build/sstate-cache/
+build/tmp/
+

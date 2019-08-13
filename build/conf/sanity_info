@@ -1,0 +1,4 @@
+SANITY_VERSION 1
+TMPDIR /var/lib/jenkins/workspace/image-rpi3bplus/build/tmp
+SSTATE_DIR /var/lib/jenkins/workspace/image-rpi3bplus/build/sstate-cache
+NATIVELSBSTRING ubuntu-16.04
