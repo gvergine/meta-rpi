@@ -7,8 +7,6 @@ inherit image
 
 DEPENDS += "bcm2835-bootfiles"
 
-DISTRO_FEATURES_append += " bluez5 bluetooth wifi systemd"
-
 CORE_OS = " \
     firewall \
     ifupdown \
