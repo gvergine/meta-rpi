@@ -49,9 +49,7 @@ ALSA += " \
 IMAGE_INSTALL += " \
     ${ALSA} \
     ${CORE_OS} \
-    ${WIFI_SUPPORT} \
-    iqaudio-mute \
-    pianobar \
+    ${WIFI_SUPPORT}
 "
 
 disable_bootlogd() {
