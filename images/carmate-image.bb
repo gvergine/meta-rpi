@@ -22,15 +22,8 @@ WIFI_SUPPORT = " \
 "
 
 ALSA += " \
-    libasound \
-    libavcodec \
-    libavdevice \
-    libavfilter \
-    libavformat \
-    libavutil \
-    libpostproc \
-    libswresample \
-    libswscale \
+    alsa-lib \
+    alsa-tools \
     alsa-conf \
     alsa-state \
     alsa-utils \
