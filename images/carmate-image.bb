@@ -8,23 +8,14 @@ inherit image
 DEPENDS += "bcm2835-bootfiles"
 
 CORE_OS = " \
-    firewall \
-    ifupdown \
-    iptables \
     kernel-modules \
-    ntp \
-    ntp-tickadj \
-    openssh openssh-keygen openssh-sftp-server \
     packagegroup-core-boot \
     procps \
-    rndaddtoentcnt \
-    rng-tools \
     term-prompt \
     tzdata \
 "
 
 WIFI_SUPPORT = " \
-    crda \
     iw \
     linux-firmware-raspbian \
     wpa-supplicant \
