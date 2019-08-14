@@ -21,4 +21,8 @@ do_deploy_append() {
         echo "" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
         echo "dtoverlay=pi3-disable-bt" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
     fi
+    
+    if [ -n "${DTPARAM_AUDIO}" ]; then
+        sed -i '/#dtparam=audio=/ c\dtparam=audio=${DTPARAM_AUDIO}' ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
+    fi
 }
