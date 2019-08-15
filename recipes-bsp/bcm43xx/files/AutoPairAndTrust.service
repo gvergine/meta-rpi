@@ -1,0 +1,11 @@
+[Unit]
+Description=AutoPairAndTrust
+After=bluetooth.service
+PartOf=bluetooth.service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/bt-agent -c NoInputNoOutput
+
+[Install]
+WantedBy=bluetooth.target
