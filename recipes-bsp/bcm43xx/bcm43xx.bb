@@ -14,4 +14,9 @@ SYSTEMD_AUTO_ENABLE = "enable"
 
 REQUIRED_DISTRO_FEATURES= "systemd"
 
-FILES_${PN} += "${systemd_unitdir}/system/Bcm43xxFirmwareUpload.service"
+do_install () {
+    install -d ${D}${systemd_system_unitdir}
+    install -m 0755 ${WORKDIR}/Bcm43xxFirmwareUpload.service ${D}${systemd_system_unitdir}
+}
+
+FILES_${PN} += "${systemd_system_unitdir}/Bcm43xxFirmwareUpload.service"
