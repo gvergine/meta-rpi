@@ -1,0 +1,9 @@
+[Unit]
+Description=Bcm43xxFirmwareUpload
+Wants=bluetooth.service
+Before=bluetooth.service
+After=dev-ttyAMA0.device
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/hciattach /dev/ttyAMA0 bcm43xx 921600 noflow -
