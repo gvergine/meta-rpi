@@ -16,6 +16,7 @@ ALSA += " \
     alsa-state \
     alsa-utils \
     alsa-utils-scripts \
+    audio-settings \
 "
 
 BLUETOOTH_SUPPORT += " \
