@@ -1,7 +1,7 @@
 SUMMARY = "Upload bcm43xx firmware on boot"
 LICENSE = "CLOSED"
 
-SRC_URI = "file://bcm43xxService/Bcm43xxFirmwareUpload.service"
+SRC_URI = "file://Bcm43xxFirmwareUpload.service"
 
 S = "${WORKDIR}"
 
