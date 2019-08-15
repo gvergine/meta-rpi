@@ -1,10 +1,10 @@
 [Unit]
 Description=audiosettings
-After=sound.target
+Before=getty.target
 
 [Service]
-Type=forking
-ExecStart=/usr/bin/amixer -c 1 cset numid=1 100%
+Type=idle
+ExecStart=/usr/bin/amixer sset PCM 100%
 
 [Install]
 WantedBy=multi-user.target
