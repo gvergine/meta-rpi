@@ -13,3 +13,5 @@ SYSTEMD_SERVICE_${PN} = "Bcm43xxFirmwareUpload.service"
 SYSTEMD_AUTO_ENABLE = "enable"
 
 REQUIRED_DISTRO_FEATURES= "systemd"
+
+FILES_${PN} += "${systemd_unitdir}/system/Bcm43xxFirmwareUpload.service"
