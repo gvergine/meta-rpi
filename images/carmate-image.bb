@@ -23,6 +23,7 @@ BLUETOOTH_SUPPORT += " \
     bluez5 \
     bcm43xx \
     bluez-alsa \
+    bluez-tools \
 "
 
 IMAGE_INSTALL += " \
