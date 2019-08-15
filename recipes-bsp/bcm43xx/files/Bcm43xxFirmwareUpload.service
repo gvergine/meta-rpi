@@ -7,3 +7,6 @@ After=dev-ttyAMA0.device
 [Service]
 Type=forking
 ExecStart=/usr/bin/hciattach /dev/ttyAMA0 bcm43xx 921600 noflow -
+
+[Install]
+WantedBy=multi-user.target
