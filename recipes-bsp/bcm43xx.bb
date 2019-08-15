@@ -7,6 +7,9 @@ S = "${WORKDIR}"
 
 inherit systemd
 
-SYSTEMD_SERVICE = "Bcm43xxFirmwareUpload.service"
+NATIVE_SYSTEMD_SUPPORT = "1"
+SYSTEMD_PACKAGES = "${PN}"
+SYSTEMD_SERVICE_${PN} = "Bcm43xxFirmwareUpload.service"
+SYSTEMD_AUTO_ENABLE = "enable"
 
 REQUIRED_DISTRO_FEATURES= "systemd"
