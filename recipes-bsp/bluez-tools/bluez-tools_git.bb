@@ -9,7 +9,9 @@ S = "${WORKDIR}/git"
 
 SRC_URI = "git://github.com/khvzak/bluez-tools;protocol=git"
 
-inherit autotools
+DEPENDS = "glib-2.0 dbus-glib"
+
+inherit autotools pkgconfig
 
 do_install() {
     install -d ${D}${bindir}
