@@ -27,4 +27,4 @@ do_install () {
 
 FILES_${PN} += "${systemd_system_unitdir}/Bcm43xxFirmwareUpload.service"
 FILES_${PN} += "${systemd_system_unitdir}/btagent.service"
-FILES_${PN} += /etc/bluetooth/main.conf"
+FILES_${PN} += "/etc/bluetooth/main.conf"
