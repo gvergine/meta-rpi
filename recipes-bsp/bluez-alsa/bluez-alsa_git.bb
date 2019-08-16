@@ -9,6 +9,7 @@ SRC_URI = "git://github.com/Arkq/bluez-alsa.git;protocol=https;branch=master"
 SRCREV = "9045edb436ea755f395a2e09e4525b5defad286a"
 
 SRC_URI += "file://bluez-alsa.service"
+SRC_URI += "file://bluealsaplay.service"
 
 S  = "${WORKDIR}/git"
 
@@ -23,12 +24,14 @@ inherit systemd
 
 SYSTEMD_AUTO_ENABLE = "enable"
 SYSTEMD_SERVICE_${PN} = "bluez-alsa.service"
+SYSTEMD_SERVICE_${PN} += "bluealsaplay.service"
 
 PACKAGECONFIG += "hcitop"
 
 do_install_append () {
     install -d ${D}${base_libdir}/systemd/system
     install -m 0644 ${WORKDIR}/bluez-alsa.service ${D}${base_libdir}/systemd/system
+    install -m 0644 ${WORKDIR}/bluealsaplay.service ${D}${base_libdir}/systemd/system
 }
 
 FILES_${PN} += "\
