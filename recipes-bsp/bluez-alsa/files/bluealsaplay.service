@@ -1,0 +1,14 @@
+[Unit]
+Description=bluealsaplay
+After=bluetooth.service
+Requires=bluetooth.service
+After=sound.target
+Requires=sound.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/bluealsa-play --profile-a2dp -d default:CARD=ALSA 00:00:00:00:00:00
+
+
+[Install]
+WantedBy=multi-user.target
