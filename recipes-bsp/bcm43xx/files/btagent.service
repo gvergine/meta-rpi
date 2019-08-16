@@ -4,6 +4,7 @@ After=bluetooth.service
 Requires=bluetooth.service
 
 [Service]
+ExecStartPre=/usr/bin/bt-adapter -s Discoverable 1
 ExecStart=/usr/bin/bt-agent -c NoInputNoOutput
 Type=simple
 
