@@ -6,7 +6,7 @@ After=audiosettings.service
 Requires=audiosettings.service
 
 [Service]
-Type=forking
+Type=simple
 ExecStart=/usr/bin/bluealsa-aplay --profile-a2dp -d default:CARD=ALSA 00:00:00:00:00:00
 Restart=on-failure
 RestartSec=2s
