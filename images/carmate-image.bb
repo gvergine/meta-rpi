@@ -23,16 +23,12 @@ BLUETOOTH_SUPPORT += " \
     bluez5 \
     bcm43xx \
     bluez-alsa \
-"
-
-JAVA += " \
-    openjre-8 \
+    bluez-tools \
 "
 
 IMAGE_INSTALL += " \
     ${ALSA} \
     ${BLUETOOTH_SUPPORT} \
-    ${JAVA} \
 "
 
 export IMAGE_BASENAME = "carmate-image"
