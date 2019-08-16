@@ -18,11 +18,7 @@ do_install() {
     install -d ${D}${bindir}
     install -m 755 ${B}/src/bt-adapter ${D}${bindir}
     install -m 755 ${B}/src/bt-agent   ${D}${bindir}
-    install -m 755 ${B}/src/bt-audio   ${D}${bindir}
     install -m 755 ${B}/src/bt-device  ${D}${bindir}
-    install -m 755 ${B}/src/bt-input   ${D}${bindir}
-    install -m 755 ${B}/src/bt-monitor ${D}${bindir}
     install -m 755 ${B}/src/bt-network ${D}${bindir}
     install -m 755 ${B}/src/bt-obex    ${D}${bindir}
-    install -m 755 ${B}/src/bt-serial  ${D}${bindir}
 }
