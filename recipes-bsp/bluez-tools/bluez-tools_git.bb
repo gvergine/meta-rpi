@@ -9,7 +9,7 @@ S = "${WORKDIR}/git"
 
 SRC_URI = "git://github.com/khvzak/bluez-tools;protocol=git"
 
-DEPENDS = "glib-2.0 dbus-glib"
+DEPENDS = "glib-2.0 dbus-glib readline"
 
 inherit autotools pkgconfig
 
