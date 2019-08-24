@@ -27,6 +27,7 @@ BLUETOOTH_SUPPORT += " \
 "
 
 IMAGE_INSTALL += " \
+    carmate_exe
     ${ALSA} \
     ${BLUETOOTH_SUPPORT} \
 "
