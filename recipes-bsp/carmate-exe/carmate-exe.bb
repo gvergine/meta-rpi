@@ -9,8 +9,8 @@ S = "${WORKDIR}/git"
 
 inherit pkgconfig cmake
 
-do_install() {
-    install -d ${D}${bindir}
+do_install_append() {
     install -m 0755 -d ${D}/opt/gps/tracking/
-    install -m 0755 src/carmate/carmate ${D}/opt/gps/tracking/
 }
+
+FILES_${PN} += "/opt/gps/tracking/"
