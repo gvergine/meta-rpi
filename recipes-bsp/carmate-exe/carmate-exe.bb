@@ -14,3 +14,5 @@ do_install_append() {
 }
 
 FILES_${PN} += "/opt/gps/tracking/"
+FILES_${PN} += "/usr/share/infrastructure/cmake/InfrastructureConfig.cmake"
+FILES_${PN} += "/usr/share/infrastructure/cmake/InfrastructureConfig-noconfig.cmake"
