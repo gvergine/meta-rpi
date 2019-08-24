@@ -4,7 +4,7 @@ LICENSE = "CLOSED"
 PR = "r0" 
 
 SRC_URI = "git://github.com/gvergine/carmate.git;protocol=https"
-
+SRCREV = "${AUTOREV}"
 S = "${WORKDIR}/git"
 
 inherit pkgconfig cmake
