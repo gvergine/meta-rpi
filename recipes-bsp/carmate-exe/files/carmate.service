@@ -1,0 +1,11 @@
+[Unit]
+Description=carmate
+Before=getty.target
+
+[Service]
+ExecStart=/usr/bin/carmate
+Restart=on-failure
+RestartSec=60s
+
+[Install]
+WantedBy=multi-user.target
